@@ -1,0 +1,8 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v --tb=short"
+log_cli = false
+
+[tool.coverage.run]
+source = ["etl"]
+omit = ["tests/*", "examples/*"]
